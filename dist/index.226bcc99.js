@@ -1009,30 +1009,23 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
 var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+var _mainView = require("./components/main-view/main-view");
 // Import statement to indicate that you need to bundle `./index.scss`
 var _indexScss = require("./index.scss");
 // Main component (will eventually use all the others)
 class MyFlixApplication extends _reactDefault.default.Component {
     render() {
-        return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-            className: "my-flix",
-            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                children: "Good morning"
-            }, void 0, false, {
-                fileName: "myFlix-client/src/index.jsx",
-                lineNumber: 12,
-                columnNumber: 17
-            }, this)
+        return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_mainView.MainView, {
         }, void 0, false, {
             fileName: "myFlix-client/src/index.jsx",
-            lineNumber: 11,
+            lineNumber: 13,
             columnNumber: 13
         }, this));
     }
 }
-// Finds the root of your app
+// Find the root of myFlix app
 const container = document.getElementsByClassName('app-container')[0];
-// Tells React to render your app in the root DOM element
+// Tell React to render myFlix app in the root DOM element
 _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElement(MyFlixApplication), container);
 
   $parcel$ReactRefreshHelpers$bb20.postlude(module);
@@ -1040,7 +1033,7 @@ _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElemen
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","react-dom":"8SG90","./index.scss":"fpsUh","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"l0MkM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","react-dom":"8SG90","./components/main-view/main-view":"16zzO","./index.scss":"fpsUh","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"l0MkM":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
 
@@ -22786,7 +22779,135 @@ module.exports = require('./cjs/scheduler-tracing.development.js');
     exports.unstable_wrap = unstable_wrap;
 })();
 
-},{}],"fpsUh":[function() {},{}],"cJiFx":[function(require,module,exports) {
+},{}],"16zzO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b169 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b169.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MainView", ()=>MainView
+);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _movieCard = require("../movie-card/movie-card");
+var _movieView = require("../movie-view/movie-view");
+class MainView extends _reactDefault.default.Component {
+    constructor(){
+        super();
+        this.state = {
+            movies: [
+                {
+                    _id: 1,
+                    Title: 'Inception',
+                    Description: 'desc1...',
+                    ImagePath: '...'
+                },
+                {
+                    _id: 2,
+                    Title: 'The Shawshank Redemption',
+                    Description: 'desc2...',
+                    ImagePath: '...'
+                },
+                {
+                    _id: 3,
+                    Title: 'Gladiator',
+                    Description: 'desc3...',
+                    ImagePath: '...'
+                }
+            ]
+        };
+    }
+    setSelectedMovie(newSelectedMovie) {
+        this.setState({
+            selectedMovie: newSelectedMovie
+        });
+    }
+    render() {
+        const { movies , selectedMovie  } = this.state;
+        if (movies.length === 0) return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: "main-view",
+            children: "The list is empty!"
+        }, void 0, false, {
+            fileName: "myFlix-client/src/components/main-view/main-view.jsx",
+            lineNumber: 27,
+            columnNumber: 41
+        }, this));
+        return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: "main-view",
+            children: selectedMovie ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_movieView.MovieView, {
+                movie: selectedMovie,
+                onBackClick: (newSelectedMovie)=>{
+                    this.setSelectedMovie(newSelectedMovie);
+                }
+            }, void 0, false, {
+                fileName: "myFlix-client/src/components/main-view/main-view.jsx",
+                lineNumber: 32,
+                columnNumber: 23
+            }, this) : movies.map((movie1)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_movieCard.MovieCard, {
+                    movie: movie1,
+                    onMovieClick: (movie)=>{
+                        this.setSelectedMovie(movie);
+                    }
+                }, movie1._id, false, {
+                    fileName: "myFlix-client/src/components/main-view/main-view.jsx",
+                    lineNumber: 34,
+                    columnNumber: 25
+                }, this)
+            )
+        }, void 0, false, {
+            fileName: "myFlix-client/src/components/main-view/main-view.jsx",
+            lineNumber: 30,
+            columnNumber: 13
+        }, this));
+    }
+}
+
+  $parcel$ReactRefreshHelpers$b169.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","../movie-card/movie-card":"aAYdz","../movie-view/movie-view":"bWpwU","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"aAYdz":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$773b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$773b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MovieCard", ()=>MovieCard
+);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class MovieCard extends _reactDefault.default.Component {
+    render() {
+        const { movie , onMovieClick  } = this.props;
+        return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: "movie-card",
+            onClick: ()=>{
+                onMovieClick(movie);
+            },
+            children: movie.Title
+        }, void 0, false, {
+            fileName: "myFlix-client/src/components/movie-card/movie-card.jsx",
+            lineNumber: 8,
+            columnNumber: 16
+        }, this));
+    }
+}
+
+  $parcel$ReactRefreshHelpers$773b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"cJiFx":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -22936,6 +23057,164 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"crDjT"}]},["jfXzL","5mhAT","4BAx9"], "4BAx9", "parcelRequireaec4")
+},{"react-refresh/runtime":"crDjT"}],"bWpwU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0266 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0266.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MovieView", ()=>MovieView
+);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class MovieView extends _reactDefault.default.Component {
+    render() {
+        const { movie , onBackClick  } = this.props;
+        return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: "movie-view",
+            children: [
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "movie-poster",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("img", {
+                        src: movie.ImagePath
+                    }, void 0, false, {
+                        fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                        lineNumber: 11,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    lineNumber: 10,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "movie-title",
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "label",
+                            children: "Title: "
+                        }, void 0, false, {
+                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            lineNumber: 14,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "value",
+                            children: movie.Title
+                        }, void 0, false, {
+                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            lineNumber: 15,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    lineNumber: 13,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "movie-description",
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "label",
+                            children: "Description: "
+                        }, void 0, false, {
+                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            lineNumber: 18,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "value",
+                            children: movie.Description
+                        }, void 0, false, {
+                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            lineNumber: 19,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    lineNumber: 17,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "movie-genre",
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "label",
+                            children: "Genre: "
+                        }, void 0, false, {
+                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            lineNumber: 22,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "value",
+                            children: movie.Genre
+                        }, void 0, false, {
+                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            lineNumber: 23,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    lineNumber: 21,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "movie-director",
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "label",
+                            children: "Director: "
+                        }, void 0, false, {
+                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            lineNumber: 26,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "value",
+                            children: movie.Director
+                        }, void 0, false, {
+                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            lineNumber: 27,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    lineNumber: 25,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                    onClick: ()=>{
+                        onBackClick(null);
+                    },
+                    children: "Back"
+                }, void 0, false, {
+                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    lineNumber: 30,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+            lineNumber: 9,
+            columnNumber: 13
+        }, this));
+    }
+}
+
+  $parcel$ReactRefreshHelpers$0266.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"fpsUh":[function() {},{}]},["jfXzL","5mhAT","4BAx9"], "4BAx9", "parcelRequireaec4")
 
 //# sourceMappingURL=index.226bcc99.js.map
