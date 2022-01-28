@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"jfXzL":[function(require,module,exports) {
+})({"h1Soc":[function(require,module,exports) {
 var Refresh = require('react-refresh/runtime');
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {
@@ -153,11 +153,11 @@ window.$RefreshSig$ = function() {
     };
 };
 
-},{"react-refresh/runtime":"crDjT"}],"crDjT":[function(require,module,exports) {
+},{"react-refresh/runtime":"8Q5qn"}],"8Q5qn":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-refresh-runtime.development.js');
 
-},{"./cjs/react-refresh-runtime.development.js":"dRJWQ"}],"dRJWQ":[function(require,module,exports) {
+},{"./cjs/react-refresh-runtime.development.js":"1tbLQ"}],"1tbLQ":[function(require,module,exports) {
 /** @license React v0.9.0
  * react-refresh-runtime.development.js
  *
@@ -620,13 +620,13 @@ module.exports = require('./cjs/react-refresh-runtime.development.js');
     exports.setSignature = setSignature;
 })();
 
-},{}],"5mhAT":[function(require,module,exports) {
+},{}],"czO6q":[function(require,module,exports) {
+"use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
-var HMR_ENV_HASH = "4a236f9275d0a351";
-module.bundle.HMR_BUNDLE_ID = "de1e5384226bcc99";
-"use strict";
+var HMR_ENV_HASH = "d6ea1d42532a7575";
+module.bundle.HMR_BUNDLE_ID = "b3ba43487eb704dd";
 function _toConsumableArray(arr) {
     return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
@@ -634,14 +634,14 @@ function _nonIterableSpread() {
     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 function _iterableToArray(iter) {
-    if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+    if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 function _arrayWithoutHoles(arr) {
     if (Array.isArray(arr)) return _arrayLikeToArray(arr);
 }
 function _createForOfIteratorHelper(o, allowArrayLike) {
-    var it;
-    if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
+    var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"];
+    if (!it) {
         if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
             if (it) o = it;
             var i = 0;
@@ -669,7 +669,7 @@ function _createForOfIteratorHelper(o, allowArrayLike) {
     var normalCompletion = true, didErr = false, err;
     return {
         s: function s() {
-            it = o[Symbol.iterator]();
+            it = it.call(o);
         },
         n: function n() {
             var step = it.next();
@@ -996,11 +996,11 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"4BAx9":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bb20 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"61G8r":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ec91 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bb20.prelude(module);
+$parcel$ReactRefreshHelpers$ec91.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -1028,16 +1028,16 @@ const container = document.getElementsByClassName('app-container')[0];
 // Tell React to render myFlix app in the root DOM element
 _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElement(MyFlixApplication), container);
 
-  $parcel$ReactRefreshHelpers$bb20.postlude(module);
+  $parcel$ReactRefreshHelpers$ec91.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","react-dom":"8SG90","./components/main-view/main-view":"16zzO","./index.scss":"fpsUh","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"l0MkM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"4LNWg","react":"lMnCM","react-dom":"cDof5","./components/main-view/main-view":"hiA52","./index.scss":"TZFhz","@parcel/transformer-js/src/esmodule-helpers.js":"629yN","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8wP2i"}],"4LNWg":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
 
-},{"./cjs/react-jsx-dev-runtime.development.js":"j48I1"}],"j48I1":[function(require,module,exports) {
+},{"./cjs/react-jsx-dev-runtime.development.js":"fos3s"}],"fos3s":[function(require,module,exports) {
 /** @license React v17.0.2
  * react-jsx-dev-runtime.development.js
  *
@@ -1828,11 +1828,11 @@ module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"react":"ynBRR","object-assign":"ksCmE"}],"ynBRR":[function(require,module,exports) {
+},{"react":"lMnCM","object-assign":"362g6"}],"lMnCM":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react.development.js');
 
-},{"./cjs/react.development.js":"cbbvY"}],"cbbvY":[function(require,module,exports) {
+},{"./cjs/react.development.js":"5yHeW"}],"5yHeW":[function(require,module,exports) {
 /** @license React v17.0.2
  * react.development.js
  *
@@ -3431,7 +3431,7 @@ module.exports = require('./cjs/react.development.js');
     exports.version = ReactVersion;
 })();
 
-},{"object-assign":"ksCmE"}],"ksCmE":[function(require,module,exports) {
+},{"object-assign":"362g6"}],"362g6":[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -3489,7 +3489,7 @@ module.exports = shouldUseNative() ? Object.assign : function(target, source) {
     return to;
 };
 
-},{}],"8SG90":[function(require,module,exports) {
+},{}],"cDof5":[function(require,module,exports) {
 'use strict';
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function') return;
@@ -3505,7 +3505,7 @@ function checkDCE() {
 }
 module.exports = require('./cjs/react-dom.development.js');
 
-},{"./cjs/react-dom.development.js":"hoeY2"}],"hoeY2":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"bh9Jb"}],"bh9Jb":[function(require,module,exports) {
 /** @license React v17.0.2
  * react-dom.development.js
  *
@@ -22046,11 +22046,11 @@ module.exports = require('./cjs/react-dom.development.js');
     exports.version = ReactVersion;
 })();
 
-},{"react":"ynBRR","object-assign":"ksCmE","scheduler":"fTIfd","scheduler/tracing":"6CrsF"}],"fTIfd":[function(require,module,exports) {
+},{"react":"lMnCM","object-assign":"362g6","scheduler":"cPDjG","scheduler/tracing":"3SqaM"}],"cPDjG":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/scheduler.development.js');
 
-},{"./cjs/scheduler.development.js":"1qvp0"}],"1qvp0":[function(require,module,exports) {
+},{"./cjs/scheduler.development.js":"1JENR"}],"1JENR":[function(require,module,exports) {
 /** @license React v0.20.2
  * scheduler.development.js
  *
@@ -22523,11 +22523,11 @@ module.exports = require('./cjs/scheduler.development.js');
     exports.unstable_wrapCallback = unstable_wrapCallback;
 })();
 
-},{}],"6CrsF":[function(require,module,exports) {
+},{}],"3SqaM":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/scheduler-tracing.development.js');
 
-},{"./cjs/scheduler-tracing.development.js":"4JwL9"}],"4JwL9":[function(require,module,exports) {
+},{"./cjs/scheduler-tracing.development.js":"3mvZS"}],"3mvZS":[function(require,module,exports) {
 /** @license React v0.20.2
  * scheduler-tracing.development.js
  *
@@ -22779,11 +22779,11 @@ module.exports = require('./cjs/scheduler-tracing.development.js');
     exports.unstable_wrap = unstable_wrap;
 })();
 
-},{}],"16zzO":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b169 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"hiA52":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c299 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b169.prelude(module);
+$parcel$ReactRefreshHelpers$c299.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -22852,15 +22852,15 @@ class MainView extends _reactDefault.default.Component {
     }
 }
 
-  $parcel$ReactRefreshHelpers$b169.postlude(module);
+  $parcel$ReactRefreshHelpers$c299.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","axios":"eA3gu","../movie-card/movie-card":"aAYdz","../movie-view/movie-view":"bWpwU","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"eA3gu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"4LNWg","react":"lMnCM","axios":"9gVYj","../movie-card/movie-card":"jzxEn","../movie-view/movie-view":"1Wrf7","@parcel/transformer-js/src/esmodule-helpers.js":"629yN","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8wP2i"}],"9gVYj":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
-},{"./lib/axios":"48Mvj"}],"48Mvj":[function(require,module,exports) {
+},{"./lib/axios":"ajtNt"}],"ajtNt":[function(require,module,exports) {
 'use strict';
 var utils = require('./utils');
 var bind = require('./helpers/bind');
@@ -22905,7 +22905,7 @@ module.exports = axios;
 // Allow use of default import syntax in TypeScript
 module.exports.default = axios;
 
-},{"./utils":"1h3Pg","./helpers/bind":"N6774","./core/Axios":"kgtpt","./core/mergeConfig":"ju77j","./defaults":"lfmyt","./cancel/Cancel":"8oobF","./cancel/CancelToken":"lN9He","./cancel/isCancel":"4wzZa","./env/data":"kI1fp","./helpers/spread":"5HPFT","./helpers/isAxiosError":"3Iw9r"}],"1h3Pg":[function(require,module,exports) {
+},{"./utils":"eCkwC","./helpers/bind":"kmXOi","./core/Axios":"ctUk7","./core/mergeConfig":"7VJ9T","./defaults":"gARcT","./cancel/Cancel":"15cuV","./cancel/CancelToken":"cI0Bo","./cancel/isCancel":"6EsGy","./env/data":"hedVy","./helpers/spread":"16QB8","./helpers/isAxiosError":"3FoQP"}],"eCkwC":[function(require,module,exports) {
 'use strict';
 var bind = require('./helpers/bind');
 // utils is a library of generic helper functions non-specific to axios
@@ -23171,7 +23171,7 @@ module.exports = {
     stripBOM: stripBOM
 };
 
-},{"./helpers/bind":"N6774"}],"N6774":[function(require,module,exports) {
+},{"./helpers/bind":"kmXOi"}],"kmXOi":[function(require,module,exports) {
 'use strict';
 module.exports = function bind(fn, thisArg) {
     return function wrap() {
@@ -23181,7 +23181,7 @@ module.exports = function bind(fn, thisArg) {
     };
 };
 
-},{}],"kgtpt":[function(require,module,exports) {
+},{}],"ctUk7":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 var buildURL = require('../helpers/buildURL');
@@ -23306,7 +23306,7 @@ utils.forEach([
 });
 module.exports = Axios;
 
-},{"./../utils":"1h3Pg","../helpers/buildURL":"21Rjf","./InterceptorManager":"cZXNS","./dispatchRequest":"hJte4","./mergeConfig":"ju77j","../helpers/validator":"6gXzM"}],"21Rjf":[function(require,module,exports) {
+},{"./../utils":"eCkwC","../helpers/buildURL":"kiNhE","./InterceptorManager":"7vkeF","./dispatchRequest":"3WcSN","./mergeConfig":"7VJ9T","../helpers/validator":"2UoMQ"}],"kiNhE":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 function encode(val) {
@@ -23347,7 +23347,7 @@ function encode(val) {
     return url;
 };
 
-},{"./../utils":"1h3Pg"}],"cZXNS":[function(require,module,exports) {
+},{"./../utils":"eCkwC"}],"7vkeF":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 function InterceptorManager() {
@@ -23390,7 +23390,7 @@ function InterceptorManager() {
 };
 module.exports = InterceptorManager;
 
-},{"./../utils":"1h3Pg"}],"hJte4":[function(require,module,exports) {
+},{"./../utils":"eCkwC"}],"3WcSN":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 var transformData = require('./transformData');
@@ -23446,7 +23446,7 @@ var Cancel = require('../cancel/Cancel');
     });
 };
 
-},{"./../utils":"1h3Pg","./transformData":"jVWth","../cancel/isCancel":"4wzZa","../defaults":"lfmyt","../cancel/Cancel":"8oobF"}],"jVWth":[function(require,module,exports) {
+},{"./../utils":"eCkwC","./transformData":"fxY86","../cancel/isCancel":"6EsGy","../defaults":"gARcT","../cancel/Cancel":"15cuV"}],"fxY86":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 var defaults = require('./../defaults');
@@ -23465,9 +23465,9 @@ var defaults = require('./../defaults');
     return data;
 };
 
-},{"./../utils":"1h3Pg","./../defaults":"lfmyt"}],"lfmyt":[function(require,module,exports) {
-var process = require("process");
+},{"./../utils":"eCkwC","./../defaults":"gARcT"}],"gARcT":[function(require,module,exports) {
 'use strict';
+var process = require("process");
 var utils = require('./utils');
 var normalizeHeaderName = require('./helpers/normalizeHeaderName');
 var enhanceError = require('./core/enhanceError');
@@ -23569,7 +23569,7 @@ utils.forEach([
 });
 module.exports = defaults;
 
-},{"process":"73Q63","./utils":"1h3Pg","./helpers/normalizeHeaderName":"9OPUe","./core/enhanceError":"77Q0p","./adapters/xhr":"8I8mh","./adapters/http":"8I8mh"}],"73Q63":[function(require,module,exports) {
+},{"process":"9fe8d","./utils":"eCkwC","./helpers/normalizeHeaderName":"9VSti","./core/enhanceError":"E1CGx","./adapters/xhr":"96RUP","./adapters/http":"96RUP"}],"9fe8d":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {
 };
@@ -23718,7 +23718,7 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"9OPUe":[function(require,module,exports) {
+},{}],"9VSti":[function(require,module,exports) {
 'use strict';
 var utils = require('../utils');
 module.exports = function normalizeHeaderName(headers, normalizedName) {
@@ -23730,7 +23730,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
     });
 };
 
-},{"../utils":"1h3Pg"}],"77Q0p":[function(require,module,exports) {
+},{"../utils":"eCkwC"}],"E1CGx":[function(require,module,exports) {
 'use strict';
 /**
  * Update an Error with the specified config, error code, and response.
@@ -23769,7 +23769,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
     return error;
 };
 
-},{}],"8I8mh":[function(require,module,exports) {
+},{}],"96RUP":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 var settle = require('./../core/settle');
@@ -23905,7 +23905,7 @@ module.exports = function xhrAdapter(config) {
     });
 };
 
-},{"./../utils":"1h3Pg","./../core/settle":"1p59F","./../helpers/cookies":"8tiyu","./../helpers/buildURL":"21Rjf","../core/buildFullPath":"lTqO4","./../helpers/parseHeaders":"aOpVv","./../helpers/isURLSameOrigin":"eO7Y2","../core/createError":"8kOGr","../defaults":"lfmyt","../cancel/Cancel":"8oobF"}],"1p59F":[function(require,module,exports) {
+},{"./../utils":"eCkwC","./../core/settle":"9pN3m","./../helpers/cookies":"iBUy6","./../helpers/buildURL":"kiNhE","../core/buildFullPath":"8qSpz","./../helpers/parseHeaders":"b83PN","./../helpers/isURLSameOrigin":"4NpHD","../core/createError":"ixfqt","../defaults":"gARcT","../cancel/Cancel":"15cuV"}],"9pN3m":[function(require,module,exports) {
 'use strict';
 var createError = require('./createError');
 /**
@@ -23920,7 +23920,7 @@ var createError = require('./createError');
     else reject(createError('Request failed with status code ' + response.status, response.config, null, response.request, response));
 };
 
-},{"./createError":"8kOGr"}],"8kOGr":[function(require,module,exports) {
+},{"./createError":"ixfqt"}],"ixfqt":[function(require,module,exports) {
 'use strict';
 var enhanceError = require('./enhanceError');
 /**
@@ -23937,7 +23937,7 @@ var enhanceError = require('./enhanceError');
     return enhanceError(error, config, code, request, response);
 };
 
-},{"./enhanceError":"77Q0p"}],"8tiyu":[function(require,module,exports) {
+},{"./enhanceError":"E1CGx"}],"iBUy6":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs support document.cookie
@@ -23973,7 +23973,7 @@ module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs support
     };
 })();
 
-},{"./../utils":"1h3Pg"}],"lTqO4":[function(require,module,exports) {
+},{"./../utils":"eCkwC"}],"8qSpz":[function(require,module,exports) {
 'use strict';
 var isAbsoluteURL = require('../helpers/isAbsoluteURL');
 var combineURLs = require('../helpers/combineURLs');
@@ -23990,7 +23990,7 @@ var combineURLs = require('../helpers/combineURLs');
     return requestedURL;
 };
 
-},{"../helpers/isAbsoluteURL":"i2Wdn","../helpers/combineURLs":"974xU"}],"i2Wdn":[function(require,module,exports) {
+},{"../helpers/isAbsoluteURL":"bfvwc","../helpers/combineURLs":"9vycT"}],"bfvwc":[function(require,module,exports) {
 'use strict';
 /**
  * Determines whether the specified URL is absolute
@@ -24004,7 +24004,7 @@ var combineURLs = require('../helpers/combineURLs');
     return /^([a-z][a-z\d+\-.]*:)?\/\//i.test(url);
 };
 
-},{}],"974xU":[function(require,module,exports) {
+},{}],"9vycT":[function(require,module,exports) {
 'use strict';
 /**
  * Creates a new URL by combining the specified URLs
@@ -24016,7 +24016,7 @@ var combineURLs = require('../helpers/combineURLs');
     return relativeURL ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '') : baseURL;
 };
 
-},{}],"aOpVv":[function(require,module,exports) {
+},{}],"b83PN":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 // Headers whose duplicates are ignored by node
@@ -24074,7 +24074,7 @@ var ignoreDuplicateOf = [
     return parsed;
 };
 
-},{"./../utils":"1h3Pg"}],"eO7Y2":[function(require,module,exports) {
+},{"./../utils":"eCkwC"}],"4NpHD":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs have full support of the APIs needed to test
@@ -24125,7 +24125,7 @@ module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs have fu
     };
 })();
 
-},{"./../utils":"1h3Pg"}],"8oobF":[function(require,module,exports) {
+},{"./../utils":"eCkwC"}],"15cuV":[function(require,module,exports) {
 'use strict';
 /**
  * A `Cancel` is an object that is thrown when an operation is canceled.
@@ -24141,13 +24141,13 @@ Cancel.prototype.toString = function toString() {
 Cancel.prototype.__CANCEL__ = true;
 module.exports = Cancel;
 
-},{}],"4wzZa":[function(require,module,exports) {
+},{}],"6EsGy":[function(require,module,exports) {
 'use strict';
 module.exports = function isCancel(value) {
     return !!(value && value.__CANCEL__);
 };
 
-},{}],"ju77j":[function(require,module,exports) {
+},{}],"7VJ9T":[function(require,module,exports) {
 'use strict';
 var utils = require('../utils');
 /**
@@ -24225,7 +24225,7 @@ var utils = require('../utils');
     return config;
 };
 
-},{"../utils":"1h3Pg"}],"6gXzM":[function(require,module,exports) {
+},{"../utils":"eCkwC"}],"2UoMQ":[function(require,module,exports) {
 'use strict';
 var VERSION = require('../env/data').version;
 var validators = {
@@ -24292,12 +24292,12 @@ module.exports = {
     validators: validators
 };
 
-},{"../env/data":"kI1fp"}],"kI1fp":[function(require,module,exports) {
+},{"../env/data":"hedVy"}],"hedVy":[function(require,module,exports) {
 module.exports = {
     "version": "0.25.0"
 };
 
-},{}],"lN9He":[function(require,module,exports) {
+},{}],"cI0Bo":[function(require,module,exports) {
 'use strict';
 var Cancel = require('./Cancel');
 /**
@@ -24379,7 +24379,7 @@ var Cancel = require('./Cancel');
 };
 module.exports = CancelToken;
 
-},{"./Cancel":"8oobF"}],"5HPFT":[function(require,module,exports) {
+},{"./Cancel":"15cuV"}],"16QB8":[function(require,module,exports) {
 'use strict';
 /**
  * Syntactic sugar for invoking a function and expanding an array for arguments.
@@ -24406,7 +24406,7 @@ module.exports = CancelToken;
     };
 };
 
-},{}],"3Iw9r":[function(require,module,exports) {
+},{}],"3FoQP":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 /**
@@ -24418,11 +24418,11 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"1h3Pg"}],"aAYdz":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$773b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"./../utils":"eCkwC"}],"jzxEn":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7bca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$773b.prelude(module);
+$parcel$ReactRefreshHelpers$7bca.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -24449,12 +24449,12 @@ class MovieCard extends _reactDefault.default.Component {
     }
 }
 
-  $parcel$ReactRefreshHelpers$773b.postlude(module);
+  $parcel$ReactRefreshHelpers$7bca.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"cJiFx":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"4LNWg","react":"lMnCM","@parcel/transformer-js/src/esmodule-helpers.js":"629yN","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8wP2i"}],"629yN":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -24484,7 +24484,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"8K2LJ":[function(require,module,exports) {
+},{}],"8wP2i":[function(require,module,exports) {
 "use strict";
 var Refresh = require('react-refresh/runtime');
 function debounce(func, delay) {
@@ -24604,11 +24604,11 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"crDjT"}],"bWpwU":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0266 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react-refresh/runtime":"8Q5qn"}],"1Wrf7":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7485 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0266.prelude(module);
+$parcel$ReactRefreshHelpers$7485.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -24757,11 +24757,11 @@ class MovieView extends _reactDefault.default.Component {
     }
 }
 
-  $parcel$ReactRefreshHelpers$0266.postlude(module);
+  $parcel$ReactRefreshHelpers$7485.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"fpsUh":[function() {},{}]},["jfXzL","5mhAT","4BAx9"], "4BAx9", "parcelRequireaec4")
+},{"react/jsx-dev-runtime":"4LNWg","react":"lMnCM","@parcel/transformer-js/src/esmodule-helpers.js":"629yN","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8wP2i"}],"TZFhz":[function() {},{}]},["h1Soc","czO6q","61G8r"], "61G8r", "parcelRequireaec4")
 
-//# sourceMappingURL=index.226bcc99.js.map
+//# sourceMappingURL=index.7eb704dd.js.map

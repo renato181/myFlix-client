@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"jfXzL":[function(require,module,exports) {
+})({"kn9T2":[function(require,module,exports) {
 var Refresh = require('react-refresh/runtime');
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {
@@ -153,11 +153,11 @@ window.$RefreshSig$ = function() {
     };
 };
 
-},{"react-refresh/runtime":"crDjT"}],"crDjT":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"786KC":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-refresh-runtime.development.js');
 
-},{"./cjs/react-refresh-runtime.development.js":"dRJWQ"}],"dRJWQ":[function(require,module,exports) {
+},{"./cjs/react-refresh-runtime.development.js":"hdge7"}],"hdge7":[function(require,module,exports) {
 /** @license React v0.9.0
  * react-refresh-runtime.development.js
  *
@@ -620,13 +620,13 @@ module.exports = require('./cjs/react-refresh-runtime.development.js');
     exports.setSignature = setSignature;
 })();
 
-},{}],"5mhAT":[function(require,module,exports) {
+},{}],"1SYPb":[function(require,module,exports) {
+"use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
-var HMR_ENV_HASH = "4a236f9275d0a351";
-module.bundle.HMR_BUNDLE_ID = "de1e5384226bcc99";
-"use strict";
+var HMR_ENV_HASH = "d6ea1d42532a7575";
+module.bundle.HMR_BUNDLE_ID = "022c1b16b4b6dfad";
 function _toConsumableArray(arr) {
     return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
@@ -634,14 +634,14 @@ function _nonIterableSpread() {
     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 function _iterableToArray(iter) {
-    if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+    if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 function _arrayWithoutHoles(arr) {
     if (Array.isArray(arr)) return _arrayLikeToArray(arr);
 }
 function _createForOfIteratorHelper(o, allowArrayLike) {
-    var it;
-    if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
+    var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"];
+    if (!it) {
         if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
             if (it) o = it;
             var i = 0;
@@ -669,7 +669,7 @@ function _createForOfIteratorHelper(o, allowArrayLike) {
     var normalCompletion = true, didErr = false, err;
     return {
         s: function s() {
-            it = o[Symbol.iterator]();
+            it = it.call(o);
         },
         n: function n() {
             var step = it.next();
@@ -996,11 +996,11 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"4BAx9":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bb20 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"d8Dch":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$98a3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bb20.prelude(module);
+$parcel$ReactRefreshHelpers$98a3.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -1017,7 +1017,7 @@ class MyFlixApplication extends _reactDefault.default.Component {
     render() {
         return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_mainView.MainView, {
         }, void 0, false, {
-            fileName: "myFlix-client/src/index.jsx",
+            fileName: "src/index.jsx",
             lineNumber: 13,
             columnNumber: 13
         }, this));
@@ -1028,16 +1028,16 @@ const container = document.getElementsByClassName('app-container')[0];
 // Tell React to render myFlix app in the root DOM element
 _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElement(MyFlixApplication), container);
 
-  $parcel$ReactRefreshHelpers$bb20.postlude(module);
+  $parcel$ReactRefreshHelpers$98a3.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","react-dom":"8SG90","./components/main-view/main-view":"16zzO","./index.scss":"fpsUh","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"l0MkM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/main-view/main-view":"4gflv","./index.scss":"lJZlQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
 
-},{"./cjs/react-jsx-dev-runtime.development.js":"j48I1"}],"j48I1":[function(require,module,exports) {
+},{"./cjs/react-jsx-dev-runtime.development.js":"48uCM"}],"48uCM":[function(require,module,exports) {
 /** @license React v17.0.2
  * react-jsx-dev-runtime.development.js
  *
@@ -1828,11 +1828,11 @@ module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"react":"ynBRR","object-assign":"ksCmE"}],"ynBRR":[function(require,module,exports) {
+},{"react":"21dqq","object-assign":"7OXxh"}],"21dqq":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react.development.js');
 
-},{"./cjs/react.development.js":"cbbvY"}],"cbbvY":[function(require,module,exports) {
+},{"./cjs/react.development.js":"6YvXz"}],"6YvXz":[function(require,module,exports) {
 /** @license React v17.0.2
  * react.development.js
  *
@@ -3431,7 +3431,7 @@ module.exports = require('./cjs/react.development.js');
     exports.version = ReactVersion;
 })();
 
-},{"object-assign":"ksCmE"}],"ksCmE":[function(require,module,exports) {
+},{"object-assign":"7OXxh"}],"7OXxh":[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -3489,7 +3489,7 @@ module.exports = shouldUseNative() ? Object.assign : function(target, source) {
     return to;
 };
 
-},{}],"8SG90":[function(require,module,exports) {
+},{}],"j6uA9":[function(require,module,exports) {
 'use strict';
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function') return;
@@ -3505,7 +3505,7 @@ function checkDCE() {
 }
 module.exports = require('./cjs/react-dom.development.js');
 
-},{"./cjs/react-dom.development.js":"hoeY2"}],"hoeY2":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"3iA9v"}],"3iA9v":[function(require,module,exports) {
 /** @license React v17.0.2
  * react-dom.development.js
  *
@@ -22046,11 +22046,11 @@ module.exports = require('./cjs/react-dom.development.js');
     exports.version = ReactVersion;
 })();
 
-},{"react":"ynBRR","object-assign":"ksCmE","scheduler":"fTIfd","scheduler/tracing":"6CrsF"}],"fTIfd":[function(require,module,exports) {
+},{"react":"21dqq","object-assign":"7OXxh","scheduler":"juvHo","scheduler/tracing":"9ZY7A"}],"juvHo":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/scheduler.development.js');
 
-},{"./cjs/scheduler.development.js":"1qvp0"}],"1qvp0":[function(require,module,exports) {
+},{"./cjs/scheduler.development.js":"RqdIf"}],"RqdIf":[function(require,module,exports) {
 /** @license React v0.20.2
  * scheduler.development.js
  *
@@ -22523,11 +22523,11 @@ module.exports = require('./cjs/scheduler.development.js');
     exports.unstable_wrapCallback = unstable_wrapCallback;
 })();
 
-},{}],"6CrsF":[function(require,module,exports) {
+},{}],"9ZY7A":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/scheduler-tracing.development.js');
 
-},{"./cjs/scheduler-tracing.development.js":"4JwL9"}],"4JwL9":[function(require,module,exports) {
+},{"./cjs/scheduler-tracing.development.js":"dClkR"}],"dClkR":[function(require,module,exports) {
 /** @license React v0.20.2
  * scheduler-tracing.development.js
  *
@@ -22779,11 +22779,11 @@ module.exports = require('./cjs/scheduler-tracing.development.js');
     exports.unstable_wrap = unstable_wrap;
 })();
 
-},{}],"16zzO":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b169 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"4gflv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f7a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b169.prelude(module);
+$parcel$ReactRefreshHelpers$f7a6.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -22818,7 +22818,7 @@ class MainView extends _reactDefault.default.Component {
         if (movies.length === 0) return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
             className: "main-view"
         }, void 0, false, {
-            fileName: "myFlix-client/src/components/main-view/main-view.jsx",
+            fileName: "src/components/main-view/main-view.jsx",
             lineNumber: 31,
             columnNumber: 37
         }, this));
@@ -22830,7 +22830,7 @@ class MainView extends _reactDefault.default.Component {
                     this.setSelectedMovie(newSelectedMovie);
                 }
             }, void 0, false, {
-                fileName: "myFlix-client/src/components/main-view/main-view.jsx",
+                fileName: "src/components/main-view/main-view.jsx",
                 lineNumber: 36,
                 columnNumber: 13
             }, this) : movies.map((movie)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_movieCard.MovieCard, {
@@ -22839,28 +22839,28 @@ class MainView extends _reactDefault.default.Component {
                         this.setSelectedMovie(newSelectedMovie);
                     }
                 }, movie._id, false, {
-                    fileName: "myFlix-client/src/components/main-view/main-view.jsx",
+                    fileName: "src/components/main-view/main-view.jsx",
                     lineNumber: 38,
                     columnNumber: 13
                 }, this)
             )
         }, void 0, false, {
-            fileName: "myFlix-client/src/components/main-view/main-view.jsx",
+            fileName: "src/components/main-view/main-view.jsx",
             lineNumber: 34,
             columnNumber: 7
         }, this));
     }
 }
 
-  $parcel$ReactRefreshHelpers$b169.postlude(module);
+  $parcel$ReactRefreshHelpers$f7a6.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","axios":"eA3gu","../movie-card/movie-card":"aAYdz","../movie-view/movie-view":"bWpwU","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"eA3gu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../movie-card/movie-card":"bwuIu","../movie-view/movie-view":"ggaUx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jo6P5":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
-},{"./lib/axios":"48Mvj"}],"48Mvj":[function(require,module,exports) {
+},{"./lib/axios":"63MyY"}],"63MyY":[function(require,module,exports) {
 'use strict';
 var utils = require('./utils');
 var bind = require('./helpers/bind');
@@ -22905,7 +22905,7 @@ module.exports = axios;
 // Allow use of default import syntax in TypeScript
 module.exports.default = axios;
 
-},{"./utils":"1h3Pg","./helpers/bind":"N6774","./core/Axios":"kgtpt","./core/mergeConfig":"ju77j","./defaults":"lfmyt","./cancel/Cancel":"8oobF","./cancel/CancelToken":"lN9He","./cancel/isCancel":"4wzZa","./env/data":"kI1fp","./helpers/spread":"5HPFT","./helpers/isAxiosError":"3Iw9r"}],"1h3Pg":[function(require,module,exports) {
+},{"./utils":"5By4s","./helpers/bind":"haRQb","./core/Axios":"cpqD8","./core/mergeConfig":"b85oP","./defaults":"lTJJ4","./cancel/Cancel":"kjMy2","./cancel/CancelToken":"45wzn","./cancel/isCancel":"a0VmF","./env/data":"h29L9","./helpers/spread":"dyQ8N","./helpers/isAxiosError":"eyiLq"}],"5By4s":[function(require,module,exports) {
 'use strict';
 var bind = require('./helpers/bind');
 // utils is a library of generic helper functions non-specific to axios
@@ -23171,7 +23171,7 @@ module.exports = {
     stripBOM: stripBOM
 };
 
-},{"./helpers/bind":"N6774"}],"N6774":[function(require,module,exports) {
+},{"./helpers/bind":"haRQb"}],"haRQb":[function(require,module,exports) {
 'use strict';
 module.exports = function bind(fn, thisArg) {
     return function wrap() {
@@ -23181,7 +23181,7 @@ module.exports = function bind(fn, thisArg) {
     };
 };
 
-},{}],"kgtpt":[function(require,module,exports) {
+},{}],"cpqD8":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 var buildURL = require('../helpers/buildURL');
@@ -23306,7 +23306,7 @@ utils.forEach([
 });
 module.exports = Axios;
 
-},{"./../utils":"1h3Pg","../helpers/buildURL":"21Rjf","./InterceptorManager":"cZXNS","./dispatchRequest":"hJte4","./mergeConfig":"ju77j","../helpers/validator":"6gXzM"}],"21Rjf":[function(require,module,exports) {
+},{"./../utils":"5By4s","../helpers/buildURL":"3bwC2","./InterceptorManager":"1VRIM","./dispatchRequest":"6sjJ6","./mergeConfig":"b85oP","../helpers/validator":"9vgkY"}],"3bwC2":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 function encode(val) {
@@ -23347,7 +23347,7 @@ function encode(val) {
     return url;
 };
 
-},{"./../utils":"1h3Pg"}],"cZXNS":[function(require,module,exports) {
+},{"./../utils":"5By4s"}],"1VRIM":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 function InterceptorManager() {
@@ -23390,7 +23390,7 @@ function InterceptorManager() {
 };
 module.exports = InterceptorManager;
 
-},{"./../utils":"1h3Pg"}],"hJte4":[function(require,module,exports) {
+},{"./../utils":"5By4s"}],"6sjJ6":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 var transformData = require('./transformData');
@@ -23446,7 +23446,7 @@ var Cancel = require('../cancel/Cancel');
     });
 };
 
-},{"./../utils":"1h3Pg","./transformData":"jVWth","../cancel/isCancel":"4wzZa","../defaults":"lfmyt","../cancel/Cancel":"8oobF"}],"jVWth":[function(require,module,exports) {
+},{"./../utils":"5By4s","./transformData":"eRqJY","../cancel/isCancel":"a0VmF","../defaults":"lTJJ4","../cancel/Cancel":"kjMy2"}],"eRqJY":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 var defaults = require('./../defaults');
@@ -23465,9 +23465,9 @@ var defaults = require('./../defaults');
     return data;
 };
 
-},{"./../utils":"1h3Pg","./../defaults":"lfmyt"}],"lfmyt":[function(require,module,exports) {
-var process = require("process");
+},{"./../utils":"5By4s","./../defaults":"lTJJ4"}],"lTJJ4":[function(require,module,exports) {
 'use strict';
+var process = require("process");
 var utils = require('./utils');
 var normalizeHeaderName = require('./helpers/normalizeHeaderName');
 var enhanceError = require('./core/enhanceError');
@@ -23569,7 +23569,7 @@ utils.forEach([
 });
 module.exports = defaults;
 
-},{"process":"73Q63","./utils":"1h3Pg","./helpers/normalizeHeaderName":"9OPUe","./core/enhanceError":"77Q0p","./adapters/xhr":"8I8mh","./adapters/http":"8I8mh"}],"73Q63":[function(require,module,exports) {
+},{"process":"d5jf4","./utils":"5By4s","./helpers/normalizeHeaderName":"adBZo","./core/enhanceError":"itUQr","./adapters/xhr":"ldm57","./adapters/http":"ldm57"}],"d5jf4":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {
 };
@@ -23718,7 +23718,7 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"9OPUe":[function(require,module,exports) {
+},{}],"adBZo":[function(require,module,exports) {
 'use strict';
 var utils = require('../utils');
 module.exports = function normalizeHeaderName(headers, normalizedName) {
@@ -23730,7 +23730,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
     });
 };
 
-},{"../utils":"1h3Pg"}],"77Q0p":[function(require,module,exports) {
+},{"../utils":"5By4s"}],"itUQr":[function(require,module,exports) {
 'use strict';
 /**
  * Update an Error with the specified config, error code, and response.
@@ -23769,7 +23769,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
     return error;
 };
 
-},{}],"8I8mh":[function(require,module,exports) {
+},{}],"ldm57":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 var settle = require('./../core/settle');
@@ -23905,7 +23905,7 @@ module.exports = function xhrAdapter(config) {
     });
 };
 
-},{"./../utils":"1h3Pg","./../core/settle":"1p59F","./../helpers/cookies":"8tiyu","./../helpers/buildURL":"21Rjf","../core/buildFullPath":"lTqO4","./../helpers/parseHeaders":"aOpVv","./../helpers/isURLSameOrigin":"eO7Y2","../core/createError":"8kOGr","../defaults":"lfmyt","../cancel/Cancel":"8oobF"}],"1p59F":[function(require,module,exports) {
+},{"./../utils":"5By4s","./../core/settle":"dD9aC","./../helpers/cookies":"4WJjt","./../helpers/buildURL":"3bwC2","../core/buildFullPath":"1I5TW","./../helpers/parseHeaders":"kqDd5","./../helpers/isURLSameOrigin":"lxXtv","../core/createError":"5nVS9","../defaults":"lTJJ4","../cancel/Cancel":"kjMy2"}],"dD9aC":[function(require,module,exports) {
 'use strict';
 var createError = require('./createError');
 /**
@@ -23920,7 +23920,7 @@ var createError = require('./createError');
     else reject(createError('Request failed with status code ' + response.status, response.config, null, response.request, response));
 };
 
-},{"./createError":"8kOGr"}],"8kOGr":[function(require,module,exports) {
+},{"./createError":"5nVS9"}],"5nVS9":[function(require,module,exports) {
 'use strict';
 var enhanceError = require('./enhanceError');
 /**
@@ -23937,7 +23937,7 @@ var enhanceError = require('./enhanceError');
     return enhanceError(error, config, code, request, response);
 };
 
-},{"./enhanceError":"77Q0p"}],"8tiyu":[function(require,module,exports) {
+},{"./enhanceError":"itUQr"}],"4WJjt":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs support document.cookie
@@ -23973,7 +23973,7 @@ module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs support
     };
 })();
 
-},{"./../utils":"1h3Pg"}],"lTqO4":[function(require,module,exports) {
+},{"./../utils":"5By4s"}],"1I5TW":[function(require,module,exports) {
 'use strict';
 var isAbsoluteURL = require('../helpers/isAbsoluteURL');
 var combineURLs = require('../helpers/combineURLs');
@@ -23990,7 +23990,7 @@ var combineURLs = require('../helpers/combineURLs');
     return requestedURL;
 };
 
-},{"../helpers/isAbsoluteURL":"i2Wdn","../helpers/combineURLs":"974xU"}],"i2Wdn":[function(require,module,exports) {
+},{"../helpers/isAbsoluteURL":"jD6NM","../helpers/combineURLs":"brOWK"}],"jD6NM":[function(require,module,exports) {
 'use strict';
 /**
  * Determines whether the specified URL is absolute
@@ -24004,7 +24004,7 @@ var combineURLs = require('../helpers/combineURLs');
     return /^([a-z][a-z\d+\-.]*:)?\/\//i.test(url);
 };
 
-},{}],"974xU":[function(require,module,exports) {
+},{}],"brOWK":[function(require,module,exports) {
 'use strict';
 /**
  * Creates a new URL by combining the specified URLs
@@ -24016,7 +24016,7 @@ var combineURLs = require('../helpers/combineURLs');
     return relativeURL ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '') : baseURL;
 };
 
-},{}],"aOpVv":[function(require,module,exports) {
+},{}],"kqDd5":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 // Headers whose duplicates are ignored by node
@@ -24074,7 +24074,7 @@ var ignoreDuplicateOf = [
     return parsed;
 };
 
-},{"./../utils":"1h3Pg"}],"eO7Y2":[function(require,module,exports) {
+},{"./../utils":"5By4s"}],"lxXtv":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs have full support of the APIs needed to test
@@ -24125,7 +24125,7 @@ module.exports = utils.isStandardBrowserEnv() ? // Standard browser envs have fu
     };
 })();
 
-},{"./../utils":"1h3Pg"}],"8oobF":[function(require,module,exports) {
+},{"./../utils":"5By4s"}],"kjMy2":[function(require,module,exports) {
 'use strict';
 /**
  * A `Cancel` is an object that is thrown when an operation is canceled.
@@ -24141,13 +24141,13 @@ Cancel.prototype.toString = function toString() {
 Cancel.prototype.__CANCEL__ = true;
 module.exports = Cancel;
 
-},{}],"4wzZa":[function(require,module,exports) {
+},{}],"a0VmF":[function(require,module,exports) {
 'use strict';
 module.exports = function isCancel(value) {
     return !!(value && value.__CANCEL__);
 };
 
-},{}],"ju77j":[function(require,module,exports) {
+},{}],"b85oP":[function(require,module,exports) {
 'use strict';
 var utils = require('../utils');
 /**
@@ -24225,7 +24225,7 @@ var utils = require('../utils');
     return config;
 };
 
-},{"../utils":"1h3Pg"}],"6gXzM":[function(require,module,exports) {
+},{"../utils":"5By4s"}],"9vgkY":[function(require,module,exports) {
 'use strict';
 var VERSION = require('../env/data').version;
 var validators = {
@@ -24292,12 +24292,12 @@ module.exports = {
     validators: validators
 };
 
-},{"../env/data":"kI1fp"}],"kI1fp":[function(require,module,exports) {
+},{"../env/data":"h29L9"}],"h29L9":[function(require,module,exports) {
 module.exports = {
     "version": "0.25.0"
 };
 
-},{}],"lN9He":[function(require,module,exports) {
+},{}],"45wzn":[function(require,module,exports) {
 'use strict';
 var Cancel = require('./Cancel');
 /**
@@ -24379,7 +24379,7 @@ var Cancel = require('./Cancel');
 };
 module.exports = CancelToken;
 
-},{"./Cancel":"8oobF"}],"5HPFT":[function(require,module,exports) {
+},{"./Cancel":"kjMy2"}],"dyQ8N":[function(require,module,exports) {
 'use strict';
 /**
  * Syntactic sugar for invoking a function and expanding an array for arguments.
@@ -24406,7 +24406,7 @@ module.exports = CancelToken;
     };
 };
 
-},{}],"3Iw9r":[function(require,module,exports) {
+},{}],"eyiLq":[function(require,module,exports) {
 'use strict';
 var utils = require('./../utils');
 /**
@@ -24418,11 +24418,11 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"1h3Pg"}],"aAYdz":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$773b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"./../utils":"5By4s"}],"bwuIu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$67b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$773b.prelude(module);
+$parcel$ReactRefreshHelpers$67b2.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -24442,19 +24442,19 @@ class MovieCard extends _reactDefault.default.Component {
             },
             children: movie.Title
         }, void 0, false, {
-            fileName: "myFlix-client/src/components/movie-card/movie-card.jsx",
+            fileName: "src/components/movie-card/movie-card.jsx",
             lineNumber: 8,
             columnNumber: 16
         }, this));
     }
 }
 
-  $parcel$ReactRefreshHelpers$773b.postlude(module);
+  $parcel$ReactRefreshHelpers$67b2.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"cJiFx":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -24484,7 +24484,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"8K2LJ":[function(require,module,exports) {
+},{}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require('react-refresh/runtime');
 function debounce(func, delay) {
@@ -24604,11 +24604,11 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"crDjT"}],"bWpwU":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0266 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react-refresh/runtime":"786KC"}],"ggaUx":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e9f6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0266.prelude(module);
+$parcel$ReactRefreshHelpers$e9f6.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -24629,12 +24629,12 @@ class MovieView extends _reactDefault.default.Component {
                     children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("img", {
                         src: movie.ImagePath
                     }, void 0, false, {
-                        fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                        fileName: "src/components/movie-view/movie-view.jsx",
                         lineNumber: 11,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
-                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    fileName: "src/components/movie-view/movie-view.jsx",
                     lineNumber: 10,
                     columnNumber: 17
                 }, this),
@@ -24645,7 +24645,7 @@ class MovieView extends _reactDefault.default.Component {
                             className: "label",
                             children: "Title: "
                         }, void 0, false, {
-                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 14,
                             columnNumber: 21
                         }, this),
@@ -24653,13 +24653,13 @@ class MovieView extends _reactDefault.default.Component {
                             className: "value",
                             children: movie.Title
                         }, void 0, false, {
-                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 15,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    fileName: "src/components/movie-view/movie-view.jsx",
                     lineNumber: 13,
                     columnNumber: 17
                 }, this),
@@ -24670,7 +24670,7 @@ class MovieView extends _reactDefault.default.Component {
                             className: "label",
                             children: "Description: "
                         }, void 0, false, {
-                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 18,
                             columnNumber: 21
                         }, this),
@@ -24678,13 +24678,13 @@ class MovieView extends _reactDefault.default.Component {
                             className: "value",
                             children: movie.Description
                         }, void 0, false, {
-                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 19,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    fileName: "src/components/movie-view/movie-view.jsx",
                     lineNumber: 17,
                     columnNumber: 17
                 }, this),
@@ -24695,7 +24695,7 @@ class MovieView extends _reactDefault.default.Component {
                             className: "label",
                             children: "Genre: "
                         }, void 0, false, {
-                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 22,
                             columnNumber: 21
                         }, this),
@@ -24703,13 +24703,13 @@ class MovieView extends _reactDefault.default.Component {
                             className: "value",
                             children: movie.Genre
                         }, void 0, false, {
-                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 23,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    fileName: "src/components/movie-view/movie-view.jsx",
                     lineNumber: 21,
                     columnNumber: 17
                 }, this),
@@ -24720,7 +24720,7 @@ class MovieView extends _reactDefault.default.Component {
                             className: "label",
                             children: "Director: "
                         }, void 0, false, {
-                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 26,
                             columnNumber: 21
                         }, this),
@@ -24728,13 +24728,13 @@ class MovieView extends _reactDefault.default.Component {
                             className: "value",
                             children: movie.Director
                         }, void 0, false, {
-                            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                            fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 27,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    fileName: "src/components/movie-view/movie-view.jsx",
                     lineNumber: 25,
                     columnNumber: 17
                 }, this),
@@ -24744,24 +24744,24 @@ class MovieView extends _reactDefault.default.Component {
                     },
                     children: "Back"
                 }, void 0, false, {
-                    fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+                    fileName: "src/components/movie-view/movie-view.jsx",
                     lineNumber: 30,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
+            fileName: "src/components/movie-view/movie-view.jsx",
             lineNumber: 9,
             columnNumber: 13
         }, this));
     }
 }
 
-  $parcel$ReactRefreshHelpers$0266.postlude(module);
+  $parcel$ReactRefreshHelpers$e9f6.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"l0MkM","react":"ynBRR","@parcel/transformer-js/src/esmodule-helpers.js":"cJiFx","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"8K2LJ"}],"fpsUh":[function() {},{}]},["jfXzL","5mhAT","4BAx9"], "4BAx9", "parcelRequireaec4")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lJZlQ":[function() {},{}]},["kn9T2","1SYPb","d8Dch"], "d8Dch", "parcelRequireaec4")
 
-//# sourceMappingURL=index.226bcc99.js.map
+//# sourceMappingURL=index.b4b6dfad.js.map
