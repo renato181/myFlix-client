@@ -1,5 +1,5 @@
 import React from 'react';
-git
+
 import { MovieCard } from '../movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
 
