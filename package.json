@@ -26,7 +26,6 @@
     "anymatch": "^3.1.2",
     "array-union": "^2.1.0",
     "astral-regex": "^2.0.0",
-    "axios": "^0.25.0",
     "balanced-match": "^1.0.2",
     "base-x": "^3.0.9",
     "binary-extensions": "^2.2.0",
