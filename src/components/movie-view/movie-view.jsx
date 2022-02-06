@@ -33,3 +33,8 @@ export class MovieView extends React.Component {
         );
     }
 }
+
+function Button({ label }) {
+    return (
+        <button>{label}</button>);
+}
