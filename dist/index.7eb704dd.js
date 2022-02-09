@@ -24716,6 +24716,14 @@ class MovieCard extends _reactDefault.default.Component {
         }, this));
     }
 }
+MovieCard.propTypes = {
+    movie: PropTypes.shape({
+        Title: PropTypes.string.isRequired,
+        Description: PropTypes.string.isRequired,
+        ImagePath: PropTypes.string.isRequired
+    }).isRequired,
+    onMovieClick: PropTypes.func.isRequired
+};
 
   $parcel$ReactRefreshHelpers$7bca.postlude(module);
 } finally {
