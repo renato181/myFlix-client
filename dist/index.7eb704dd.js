@@ -22809,7 +22809,14 @@ class MainView extends _reactDefault.default.Component {
         };
     }
     componentDidMount() {
-    /* ... */ }
+        _axiosDefault.default.get('https://movies181.herokuapp.com/movies').then((response)=>{
+            this.setState({
+                movies: response.data
+            });
+        }).catch((error)=>{
+            console.log(error);
+        });
+    }
     /*When a movie is clicked, this function is invoked and updates the state of the `selectedMovie` *property to that movie*/ setSelectedMovie(movie) {
         this.setState({
             selectedMovie: movie
@@ -22826,7 +22833,7 @@ class MainView extends _reactDefault.default.Component {
             onLoggedIn: (user)=>this.onLoggedIn(user)
         }, void 0, false, {
             fileName: "myFlix-client/src/components/main-view/main-view.jsx",
-            lineNumber: 44,
+            lineNumber: 52,
             columnNumber: 27
         }, this));
         // Before the movies have been loaded
@@ -22834,7 +22841,7 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view"
         }, void 0, false, {
             fileName: "myFlix-client/src/components/main-view/main-view.jsx",
-            lineNumber: 47,
+            lineNumber: 55,
             columnNumber: 41
         }, this));
         return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -22846,7 +22853,7 @@ class MainView extends _reactDefault.default.Component {
                 }
             }, void 0, false, {
                 fileName: "myFlix-client/src/components/main-view/main-view.jsx",
-                lineNumber: 53,
+                lineNumber: 61,
                 columnNumber: 23
             }, this) : movies.map((movie)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_movieCard.MovieCard, {
                     movie: movie,
@@ -22855,13 +22862,13 @@ class MainView extends _reactDefault.default.Component {
                     }
                 }, movie._id, false, {
                     fileName: "myFlix-client/src/components/main-view/main-view.jsx",
-                    lineNumber: 55,
+                    lineNumber: 63,
                     columnNumber: 25
                 }, this)
             )
         }, void 0, false, {
             fileName: "myFlix-client/src/components/main-view/main-view.jsx",
-            lineNumber: 50,
+            lineNumber: 58,
             columnNumber: 13
         }, this));
     }
@@ -24513,6 +24520,14 @@ function LoginView(props) {
 }
 _s(LoginView, "wuQOK7xaXdVz4RMrZQhWbI751Oc=");
 _c = LoginView;
+const { Button  } = '../components/button/button';
+/*... in the render function*/ /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Button, {
+    label: "Click me!"
+}, void 0, false, {
+    fileName: "myFlix-client/src/components/login-view/login-view.jsx",
+    lineNumber: 33,
+    columnNumber: 1
+}, undefined);
 var _c;
 $RefreshReg$(_c, "LoginView");
 
@@ -24722,6 +24737,11 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class MovieView extends _reactDefault.default.Component {
+    componentDidMount() {
+        document.addEventListener('keypress', (event)=>{
+            console.log(event.key);
+        });
+    }
     render() {
         const { movie , onBackClick  } = this.props;
         return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24733,12 +24753,12 @@ class MovieView extends _reactDefault.default.Component {
                         src: movie.ImagePath
                     }, void 0, false, {
                         fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                        lineNumber: 11,
+                        lineNumber: 17,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                    lineNumber: 10,
+                    lineNumber: 16,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24749,7 +24769,7 @@ class MovieView extends _reactDefault.default.Component {
                             children: "Title: "
                         }, void 0, false, {
                             fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                            lineNumber: 14,
+                            lineNumber: 20,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
@@ -24757,13 +24777,13 @@ class MovieView extends _reactDefault.default.Component {
                             children: movie.Title
                         }, void 0, false, {
                             fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                            lineNumber: 15,
+                            lineNumber: 21,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                    lineNumber: 13,
+                    lineNumber: 19,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24774,7 +24794,7 @@ class MovieView extends _reactDefault.default.Component {
                             children: "Description: "
                         }, void 0, false, {
                             fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                            lineNumber: 18,
+                            lineNumber: 24,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
@@ -24782,13 +24802,13 @@ class MovieView extends _reactDefault.default.Component {
                             children: movie.Description
                         }, void 0, false, {
                             fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                            lineNumber: 19,
+                            lineNumber: 25,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                    lineNumber: 17,
+                    lineNumber: 23,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24799,7 +24819,7 @@ class MovieView extends _reactDefault.default.Component {
                             children: "Genre: "
                         }, void 0, false, {
                             fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                            lineNumber: 22,
+                            lineNumber: 28,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
@@ -24807,13 +24827,13 @@ class MovieView extends _reactDefault.default.Component {
                             children: movie.Genre
                         }, void 0, false, {
                             fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                            lineNumber: 23,
+                            lineNumber: 29,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                    lineNumber: 21,
+                    lineNumber: 27,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -24824,7 +24844,7 @@ class MovieView extends _reactDefault.default.Component {
                             children: "Director: "
                         }, void 0, false, {
                             fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                            lineNumber: 26,
+                            lineNumber: 32,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
@@ -24832,13 +24852,13 @@ class MovieView extends _reactDefault.default.Component {
                             children: movie.Director
                         }, void 0, false, {
                             fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                            lineNumber: 27,
+                            lineNumber: 33,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                    lineNumber: 25,
+                    lineNumber: 31,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -24848,29 +24868,17 @@ class MovieView extends _reactDefault.default.Component {
                     children: "Back"
                 }, void 0, false, {
                     fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-                    lineNumber: 30,
+                    lineNumber: 36,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-            lineNumber: 9,
+            lineNumber: 15,
             columnNumber: 13
         }, this));
     }
 }
-function Button({ label  }) {
-    return(/*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
-        children: label
-    }, void 0, false, {
-        fileName: "myFlix-client/src/components/movie-view/movie-view.jsx",
-        lineNumber: 39,
-        columnNumber: 9
-    }, this));
-}
-_c = Button;
-var _c;
-$RefreshReg$(_c, "Button");
 
   $parcel$ReactRefreshHelpers$7485.postlude(module);
 } finally {

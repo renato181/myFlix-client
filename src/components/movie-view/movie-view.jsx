@@ -2,6 +2,12 @@ import React from 'react';
 
 export class MovieView extends React.Component {
 
+    componentDidMount() {
+        document.addEventListener('keypress', event => {
+            console.log(event.key);
+        });
+    }
+
     render() {
         const { movie, onBackClick } = this.props;
 
@@ -32,9 +38,4 @@ export class MovieView extends React.Component {
             </div>
         );
     }
-}
-
-function Button({ label }) {
-    return (
-        <button>{label}</button>);
 }

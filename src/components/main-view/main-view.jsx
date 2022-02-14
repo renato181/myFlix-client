@@ -18,7 +18,15 @@ export class MainView extends React.Component {
     }
 
     componentDidMount() {
-        /* ... */
+        axios.get('https://movies181.herokuapp.com/movies')
+            .then(response => {
+                this.setState({
+                    movies: response.data
+                });
+            })
+            .catch(error => {
+                console.log(error);
+            });
     }
 
     /*When a movie is clicked, this function is invoked and updates the state of the `selectedMovie` *property to that movie*/
