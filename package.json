@@ -150,8 +150,5 @@
     "xxhash-wasm": "^0.4.2",
     "yallist": "^4.0.0"
   },
-  "description": "",
-  "devDependencies": {
-    "parcel": "^2.2.1"
-  }
+  "description": ""
 }
