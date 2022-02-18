@@ -150,9 +150,5 @@
     "xxhash-wasm": "^0.4.2",
     "yallist": "^4.0.0"
   },
-  "description": "",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.3.1",
-    "parcel": "^2.2.1"
-  }
+  "description": ""
 }
