@@ -3,9 +3,8 @@
   font-family: "Gill Sans", sans-serif;
   background-color: lightgray;
   padding: 8px;
-  margin: 15px;
-  max-width: 500px;
-  padding-top: 18px;
+  margin: auto;
+  max-width: 400px;
 }
 .my-flix {
   color: steelblue;

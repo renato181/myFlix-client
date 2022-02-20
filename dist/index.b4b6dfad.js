@@ -24535,6 +24535,18 @@ function LoginView(props) {
                 lineNumber: 24,
                 columnNumber: 13
             }, this),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+            }, void 0, false, {
+                fileName: "src/components/login-view/login-view.jsx",
+                lineNumber: 28,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+            }, void 0, false, {
+                fileName: "src/components/login-view/login-view.jsx",
+                lineNumber: 29,
+                columnNumber: 13
+            }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_buttonDefault.default, {
                 variant: "primary",
                 type: "submit",
@@ -24542,7 +24554,19 @@ function LoginView(props) {
                 children: "Submit"
             }, void 0, false, {
                 fileName: "src/components/login-view/login-view.jsx",
-                lineNumber: 28,
+                lineNumber: 30,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+            }, void 0, false, {
+                fileName: "src/components/login-view/login-view.jsx",
+                lineNumber: 33,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {
+            }, void 0, false, {
+                fileName: "src/components/login-view/login-view.jsx",
+                lineNumber: 34,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_buttonDefault.default, {
@@ -24552,7 +24576,7 @@ function LoginView(props) {
                 children: "Register"
             }, void 0, false, {
                 fileName: "src/components/login-view/login-view.jsx",
-                lineNumber: 31,
+                lineNumber: 35,
                 columnNumber: 13
             }, this)
         ]
