@@ -1,5 +1,15 @@
-
-
+#Button {
+  margin: auto;
+  padding-left: 2px;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", sans-serif;
+  background-color: lightgray;
+  padding: 8px;
+  margin: auto;
+  max-width: 400px;
+}
 .my-flix {
   color: steelblue;
 }
