@@ -1,4 +1,19 @@
 // myFlix-client/src/components/button/button.scss
 .super-button {
-    // styling goes here
+  display: inline-block;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+	background-color: $accent;
+	padding: 15px 45px;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 3px;
+	border-radius: 2px;
+	text-align: center;
+	position: relative;
+	outline: none;
+	transition: background-color .1s ease;
+	cursor: pointer
   }
